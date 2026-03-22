@@ -1,0 +1,40 @@
+# Vous aller trouvez l'ensemble des documents demandé dans
+# projet_prog_uga.pdf
+# Project_prog_uga_partie_2.pdf
+
+# Pour compiler: 
+autoreconf -vif
+CFLAGS='' ./configure
+make
+
+# Partie 1
+./project_folder/etape1_ehdr Examples_fusion/file1.o
+./project_folder/Tests/p1.sh
+
+# Partie 2
+./project_folder/etape2_elf_display_sec Examples_fusion/file1.o
+./project_folder/Tests/p2.sh
+
+# Partie 3
+./project_folder/etape3_display_section Examples_fusion/file1.o 1
+./project_folder/Tests/p3.sh
+
+# Partie 4
+./project_folder/etape4_display_symtab Examples_fusion/file1.o
+./project_folder/Tests/p4.sh
+
+# Partie 5
+./project_folder/etape5_display_reloc Examples_fusion/file1.o
+./project_folder/Tests/p5.sh
+
+# Partie 7
+./project_folder/etape7_merge_symbols Examples_fusion/file1.o Examples_fusion/file3.o
+./project_folder/Tests/p7.sh
+
+# Partie 8
+./project_folder/etape8_merge_realocation Examples_fusion/file1.o Examples_fusion/file3.o
+./project_folder/Tests/p8.sh
+
+# Partie 9
+./project_folder/etape9_merge_relocations Examples_fusion/file1.o Examples_fusion/file2.o merged_output.o
+./project_folder/Tests/p9.sh

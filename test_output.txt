@@ -1,0 +1,1 @@
+Error: inputs must be ARM relocatable objects
